@@ -2,7 +2,7 @@ variable "compartment_ocid" {}
 variable "region" {}
 variable "display_name_prefix" {}
 
-resource "null_resource" "git_backend" {
+resource "null_resource" "git_backend1" {
   provisioner "local-exec" {
     command = "echo \"testing git backend from Github private repo\""
   }
